@@ -1,7 +1,8 @@
 # Our Plugin for Intallij Idea
-## It's can:
-* translate comments
-* translate strings in ""
+## In selected text it can translate:
+* comments
+* strings in ""
+
 
 ## Authors:
 * Mihail Olshansky
