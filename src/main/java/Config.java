@@ -1,7 +1,10 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.*;
 
 public class Config {
     public static final int LANGUAGE_LENGTH = 2;
@@ -15,6 +18,7 @@ public class Config {
     private static String langFrom;
     private static String langTo;
 
+    private static List<String> languages = new LinkedList<String>();
 
     public static String getLangFrom() throws IOException {
         createIfNotExists();

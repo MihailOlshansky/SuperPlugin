@@ -1,10 +1,10 @@
 <application>
   <component name="ActionsLocalSummary">
     <e n="$Undo">
-      <i c="12" l="1622572306061" />
+      <i c="15" l="1622577445305" />
     </e>
     <e n="EditorBackSpace">
-      <i c="79" l="1622572304594" />
+      <i c="103" l="1622577430650" />
     </e>
     <e n="EditorDown">
       <i c="2" l="1622555638316" />
@@ -40,7 +40,7 @@
       <i c="3" l="1622566323584" />
     </e>
     <e n="FindNext">
-      <i c="1" l="1622568467719" />
+      <i c="4" l="1622575946935" />
     </e>
     <e n="GotoTest">
       <i c="4" l="1622563168583" />
@@ -49,7 +49,7 @@
       <i c="1" l="1622544668804" />
     </e>
     <e n="SaveAll">
-      <i c="4" l="1622566327429" />
+      <i c="5" l="1622577217676" />
     </e>
     <e n="WelcomeScreen.CreateNewProject">
       <i c="1" l="1622544509095" />

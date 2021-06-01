@@ -9,30 +9,6 @@ import java.io.IOException;
 
 
 public class TranslateAndReplaceAction extends AnAction {
-    /*
-    public TestAction() {
-        super(new TranslatorActionHandler(new ActionHandler() {
-            @Override
-            public void handleResult(Editor editor, List<String> translated) {
-                final SelectionModel selectionModel = editor.getSelectionModel();
-                final int selectionStart = selectionModel.getSelectionStart();
-
-                String oldText = selectionModel.getSelectedText();
-                final String newText = translated.isEmpty() ? oldText : translated.get(0);
-
-                EditorModificationUtil.deleteSelectedText(editor);
-                EditorModificationUtil.insertStringAtCaret(editor, newText);
-                selectionModel.setSelection(selectionStart, selectionStart + newText.length());
-            }
-
-            @Override
-            public void handleError(Editor editor) {
-
-            }
-        }));
-    }
-*/
-
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
         Editor editor = event.getData(PlatformDataKeys.EDITOR);
