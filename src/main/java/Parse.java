@@ -1,8 +1,10 @@
+import com.intellij.openapi.project.Project;
+
 import java.io.IOException;
 
 public class Parse {
 
-    public static String makeResultString(String data) {
+    public static String makeResultString(Project project, String data) {
         int counter = 0;
         StringBuilder result = new StringBuilder();
 
@@ -18,7 +20,7 @@ public class Parse {
                     String toTranslate = data.substring(start + 2, end - 2);
                     result
                             .append("/*")
-                            .append(Translator.translate(Config.getLangFrom(), Config.getLangTo(), toTranslate))
+                            .append(Translator.translate(Config.getLangFrom(project), Config.getLangTo(project), toTranslate))
                             .append("*/");
                     counter += 2;
                     continue;
@@ -32,7 +34,7 @@ public class Parse {
                     String toTranslate = data.substring(start + 2, end - 1);
                     result
                             .append("//")
-                            .append(Translator.translate(Config.getLangFrom(), Config.getLangTo(), toTranslate))
+                            .append(Translator.translate(Config.getLangFrom(project), Config.getLangTo(project), toTranslate))
                             .append("\n");
                     counter += 1;
                     continue;
@@ -46,7 +48,7 @@ public class Parse {
                     String toTranslate = data.substring(start + 1, end - 1);
                     result
                             .append("\"")
-                            .append(Translator.translate(Config.getLangFrom(), Config.getLangTo(), toTranslate))
+                            .append(Translator.translate(Config.getLangFrom(project), Config.getLangTo(project), toTranslate))
                             .append("\"");
                     counter += 1;
                     continue;

@@ -1,12 +1,12 @@
 Config.java
  Config
-Translator.java
- Translator
-TranslateAndReplaceAction.java
- TranslateAndReplaceAction
- TranslateAndReplaceAction$1
 Parse.java
  Parse
+Translator.java
+ Translator
 ChangeLanguagesAction.java
  ChangeLanguagesAction
  ChangeLanguagesAction$1
+TranslateAndReplaceAction.java
+ TranslateAndReplaceAction
+ TranslateAndReplaceAction$1
