@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>itmo.po.testPlugin</id>
+    <name>test</name>
+    <vendor email="" url="">ITMO</vendor>
+
+    <description><![CDATA[
+    It's a plugin we made by loosing our blood and selves... Please give us 25 points...
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="TranslateAndReplaceAction" class="TranslateAndReplaceAction" text="Test Action" description="Tasty">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl T"/>
+        </action>
+        <action id="ChangeLanguagesAction" class="ChangeLanguagesAction" text="Change Languages Action"
+                description="Changing languages">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl L"/>
+        </action>
+    </actions>
+</idea-plugin>

@@ -1,0 +1,23 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="211.7142" until-build="211.*"/>
+  <id>itmo.po.testPlugin</id>
+  <name>test</name>
+  <vendor email="" url="">ITMO</vendor>
+  <description>
+    It's a plugin we made by loosing our blood and selves... Please give us 25 points...
+    </description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <action id="TranslateAndReplaceAction" class="TranslateAndReplaceAction" text="Test Action" description="Tasty">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl T"/>
+    </action>
+    <action id="ChangeLanguagesAction" class="ChangeLanguagesAction" text="Change Languages Action" description="Changing languages">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl L"/>
+    </action>
+  </actions>
+</idea-plugin>

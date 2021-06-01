@@ -1,0 +1,85 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="4" l="1622586623188" />
+    </e>
+    <e n="$Undo">
+      <i c="24" l="1622586838406" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="133" l="1622586605769" />
+    </e>
+    <e n="EditorCopy">
+      <i c="1" l="1622583455815" />
+    </e>
+    <e n="EditorDown">
+      <i c="8" l="1622586839304" />
+    </e>
+    <e n="EditorDownWithSelection">
+      <i c="10" l="1622584100728" />
+    </e>
+    <e n="EditorEnter">
+      <i c="11" l="1622584131496" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1" l="1622547405311" />
+    </e>
+    <e n="EditorLeft">
+      <i c="43" l="1622584130950" />
+    </e>
+    <e n="EditorLeftWithSelection">
+      <i c="77" l="1622566310384" />
+    </e>
+    <e n="EditorLineEnd">
+      <i c="5" l="1622586601989" />
+    </e>
+    <e n="EditorLineStartWithSelection">
+      <i c="1" l="1622561485686" />
+    </e>
+    <e n="EditorRight">
+      <i c="12" l="1622584099547" />
+    </e>
+    <e n="EditorRightWithSelection">
+      <i c="41" l="1622584101889" />
+    </e>
+    <e n="EditorSplitLine">
+      <i c="1" l="1622545459335" />
+    </e>
+    <e n="EditorTab">
+      <i c="1" l="1622583310640" />
+    </e>
+    <e n="EditorUp">
+      <i c="15" l="1622584138659" />
+    </e>
+    <e n="FindNext">
+      <i c="5" l="1622582646585" />
+    </e>
+    <e n="GotoTest">
+      <i c="4" l="1622563168583" />
+    </e>
+    <e n="NewClass">
+      <i c="1" l="1622544668804" />
+    </e>
+    <e n="SaveAll">
+      <i c="8" l="1622583319233" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="1" l="1622583308529" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1622544509095" />
+    </e>
+    <e n="com.intellij.diagnostic.IdeMessagePanel$4">
+      <i c="3" l="1622555077033" />
+    </e>
+    <e n="com.intellij.find.SearchReplaceComponent$11">
+      <i c="1" l="1622582648244" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$4">
+      <i c="13" l="1622564643156" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1622583318002" />
+    </e>
+  </component>
+</application>
