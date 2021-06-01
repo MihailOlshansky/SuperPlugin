@@ -1,0 +1,9 @@
+Config.java
+ Config
+Translator.java
+ Translator
+TranslateAndReplaceAction.java
+ TranslateAndReplaceAction
+ TranslateAndReplaceAction$1
+ChangeLanguagesAction.java
+ ChangeLanguagesAction

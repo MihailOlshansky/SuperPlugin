@@ -1,0 +1,20 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.4.21'
+}
+
+group 'itmo.po'
+version '1.0-SNAPSHOT'
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2021.1.1'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+
+repositories {
+    mavenCentral()
+}
