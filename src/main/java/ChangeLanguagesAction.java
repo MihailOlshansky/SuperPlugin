@@ -1,5 +1,7 @@
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.InputValidator;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.util.NlsSafe;
@@ -23,46 +25,46 @@ public class ChangeLanguagesAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
+        Project project = event.getData(PlatformDataKeys.PROJECT);
         String[] languages = {"cz", "de", "dn", "en", "fr", "ru"};
         StringBuilder msg = new StringBuilder("Languages available:\n");
         for (String i : languages) {
             msg.append(i).append("\n");
         }
 
-        try {
-            String result = Messages.showMultilineInputDialog(
-                    event.getProject(),
-                    msg.toString(),
-                    "Change languages",
-                    Config.getLangFrom() + "\n" + Config.getLangTo(),
-                    Messages.getInformationIcon(),
-                    new InputValidator() {
-                        @Override
-                        public boolean checkInput(@NlsSafe String inputString) {
-                            String[] split = inputString.split("\\s+");
+        String result = Messages.showMultilineInputDialog(
+                project,
+                msg.toString(),
+                "Change languages",
+                Config.getLangFrom(project) + "\n" + Config.getLangTo(project),
+                Messages.getInformationIcon(),
+                new InputValidator() {
+                    @Override
+                    public boolean checkInput(@NlsSafe String inputString) {
+                        String[] split = inputString.split("\\s+");
 
-                            if(split.length != 2) {
+                        if(split.length != 2) {
+                            return false;
+                        }
+
+                        for (String i : split) {
+                            if(!contains(languages, i)) {
                                 return false;
                             }
-
-                            for (String i : split) {
-                                if(i.length() != 2 || !contains(languages, i)) {
-                                    return false;
-                                }
-                            }
-
-                            return true;
                         }
 
-                        @Override
-                        public boolean canClose(@NlsSafe String inputString) {
-                            return true;
-                        }
+                        return true;
                     }
-            );
-            Config.setLangFromTo(result.split("\\s+")[0], result.split("\\s+")[1]);
-        } catch (IOException e) {
-            e.printStackTrace();
+
+                    @Override
+                    public boolean canClose(@NlsSafe String inputString) {
+                        return true;
+                    }
+                }
+        );
+        if (result != null) {
+            System.out.println(result);
+            Config.setLangFromTo(project, result.split("\\s+")[0], result.split("\\s+")[1]);
         }
     }
 

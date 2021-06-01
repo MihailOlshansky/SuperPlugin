@@ -18,16 +18,13 @@ public class TranslateAndReplaceAction extends AnAction {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                try {
+                if (selectionModel.hasSelection()) {
                     document.replaceString(
                             selectionModel.getSelectionStart(),
                             selectionModel.getSelectionEnd(),
-                            Translator.translate(
-                                    Config.getLangFrom(),
-                                    Config.getLangTo(),
+                            Parse.makeResultString(
+                                    event.getData(PlatformDataKeys.PROJECT),
                                     selectionModel.getSelectedText()));
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
             }
         };
