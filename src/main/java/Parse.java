@@ -1,48 +1,63 @@
+import java.io.IOException;
+
 public class Parse {
 
-    public static String MakeResultString(String data) {
+    public static String makeResultString(String data) {
         int counter = 0;
-        StringBuilder Result = new StringBuilder();
+        StringBuilder result = new StringBuilder();
 
-        while (counter < data.length() - 1) {
-            int start = counter;
-            if (data.charAt(counter) == '/' && data.charAt(counter + 1) == '*') {
-                counter += 2;
-                while (counter < data.length() - 1 && data.charAt(counter) == '*' && data.charAt(counter + 1) == '/') {
-                    counter++;
+        try {
+            while (counter < data.length() - 1) {
+                int start = counter;
+                if (data.charAt(counter) == '/' && data.charAt(counter + 1) == '*') {
+                    counter += 2;
+                    while (counter < data.length() - 1 && !(data.charAt(counter) == '*' && data.charAt(counter + 1) == '/')) {
+                        counter++;
+                    }
+                    int end = counter + 1;
+                    String toTranslate = data.substring(start + 2, end - 2);
+                    result
+                            .append("/*")
+                            .append(Translator.translate(Config.getLangFrom(), Config.getLangTo(), toTranslate))
+                            .append("*/");
+                    counter += 2;
+                    continue;
                 }
-                int end = counter + 1;
-                String toTranslate = data.substring(start, end);
-                Result.append(Translator.translate(Config.GetLangFrom(), Config.GetLangTo(), toTranslate));
-                counter += 2;
-                continue;
-            }
-            if (data.charAt(counter) == '/' && data.charAt(counter + 1) == '/') {
-                counter += 2;
-                while (counter < data.length() - 1 && data.charAt(counter) == '\n') {
-                    counter++;
+                if (data.charAt(counter) == '/' && data.charAt(counter + 1) == '/') {
+                    counter += 2;
+                    while (counter < data.length() && data.charAt(counter) != '\n') {
+                        counter++;
+                    }
+                    int end = counter;
+                    String toTranslate = data.substring(start + 2, end - 1);
+                    result
+                            .append("//")
+                            .append(Translator.translate(Config.getLangFrom(), Config.getLangTo(), toTranslate))
+                            .append("\n");
+                    counter += 1;
+                    continue;
                 }
-                int end = counter;
-                String toTranslate = data.substring(start, end);
-                Result.append(Translator.translate(Config.GetLangFrom(), Config.GetLangTo(), toTranslate));
-                counter += 1;
-                continue;
-            }
-            if (data.charAt(counter) == '\"') {
-                counter += 1;
-                while (counter < data.length() && data.charAt(counter) == '\"') {
-                    counter++;
+                if (data.charAt(counter) == '\"') {
+                    counter += 1;
+                    while (counter < data.length() && data.charAt(counter) != '\"') {
+                        counter++;
+                    }
+                    int end = counter;
+                    String toTranslate = data.substring(start + 1, end - 1);
+                    result
+                            .append("\"")
+                            .append(Translator.translate(Config.getLangFrom(), Config.getLangTo(), toTranslate))
+                            .append("\"");
+                    counter += 1;
+                    continue;
                 }
-                int end = counter;
-                String toTranslate = data.substring(start, end);
-                Result.append(Translator.translate(Config.GetLangFrom(), Config.GetLangTo(), toTranslate));
-                counter += 1;
-                continue;
+                result.append(data.charAt(counter++));
             }
-            Result.append(data.charAt(counter++));
+        } catch (IOException ioext) {
+            ioext.printStackTrace();
         }
         if (counter == data.length() - 1)
-            Result.append(data.charAt(data.length()));
-        return Result.toString();
+            result.append(data.charAt(counter));
+        return result.toString();
     }
 }

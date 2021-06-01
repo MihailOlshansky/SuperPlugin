@@ -60,7 +60,9 @@ public class ChangeLanguagesAction extends AnAction {
                         }
                     }
             );
-            Config.setLangFromTo(result.split("\\s+")[0], result.split("\\s+")[1]);
+            if (result != null) {
+                Config.setLangFromTo(result.split("\\s+")[0], result.split("\\s+")[1]);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
