@@ -17,7 +17,7 @@ public class Parse {
                         counter++;
                     }
                     int end = counter + 1;
-                    String toTranslate = data.substring(start + 2, end - 2);
+                    String toTranslate = data.substring(start + 2, end - 1);
                     result
                             .append("/*")
                             .append(Translator.translate(Config.getLangFrom(project), Config.getLangTo(project), toTranslate))
@@ -31,7 +31,7 @@ public class Parse {
                         counter++;
                     }
                     int end = counter;
-                    String toTranslate = data.substring(start + 2, end - 1);
+                    String toTranslate = data.substring(start + 2, end);
                     result
                             .append("//")
                             .append(Translator.translate(Config.getLangFrom(project), Config.getLangTo(project), toTranslate))
@@ -45,7 +45,7 @@ public class Parse {
                         counter++;
                     }
                     int end = counter;
-                    String toTranslate = data.substring(start + 1, end - 1);
+                    String toTranslate = data.substring(start + 1, end);
                     result
                             .append("\"")
                             .append(Translator.translate(Config.getLangFrom(project), Config.getLangTo(project), toTranslate))

@@ -1,9 +1,9 @@
 {
   "appInfo" : {
     "build" : "211.7142.45",
-    "buildDate" : "2021-04-30T10:16:26.597Z[UTC]",
+    "buildDate" : "2021-04-30T10:16:30.957Z[UTC]",
     "productCode" : "IC",
-    "generated" : "2021-06-01T18:29:45.5490932Z",
+    "generated" : "2021-06-02T12:49:04.9410832Z",
     "os" : "Windows 10 10.0",
     "runtime" : "Oracle Corporation 15.0.2 15.0.2+7-27"
   },
@@ -17,14 +17,14 @@
   "projectIndexingHistory" : {
     "projectName" : "untitled",
     "times" : {
-      "totalUpdatingTime" : 6711134600,
-      "indexingTime" : 42584100,
-      "contentLoadingTime" : 3335789,
-      "scanFilesTime" : 5584783700,
-      "pushPropertiesTime" : 15629800,
+      "totalUpdatingTime" : 13584054400,
+      "indexingTime" : 86939800,
+      "contentLoadingTime" : 8223686,
+      "scanFilesTime" : 8903934400,
+      "pushPropertiesTime" : 17022900,
       "indexExtensionsTime" : 0,
-      "updatingStart" : "2021-06-01T18:29:38.8454923Z",
-      "updatingEnd" : "2021-06-01T18:29:45.5490932Z",
+      "updatingStart" : "2021-06-02T12:48:51.3436584Z",
+      "updatingEnd" : "2021-06-02T12:49:04.9270835Z",
       "totalSuspendedTime" : 0,
       "wasInterrupted" : false
     },
@@ -39,26 +39,26 @@
     "totalStatsPerFileType" : [ {
       "fileType" : "JAVA",
       "partOfTotalProcessingTime" : {
-        "part" : 13933100,
-        "total" : 13933100
+        "part" : 28042100,
+        "total" : 28042100
       },
       "partOfTotalContentLoadingTime" : {
-        "part" : 2616100,
-        "total" : 2616100
+        "part" : 5253900,
+        "total" : 5253900
       },
       "totalNumberOfFiles" : 1,
-      "totalFilesSize" : 59,
+      "totalFilesSize" : 184,
       "indexingSpeed" : {
-        "totalBytes" : 59,
-        "totalTime" : 13933100
+        "totalBytes" : 184,
+        "totalTime" : 28042100
       },
       "biggestContributors" : [ {
         "providerName" : "Module 'untitled'",
         "numberOfFiles" : 1,
-        "totalFilesSize" : 59,
+        "totalFilesSize" : 184,
         "partOfTotalProcessingTimeOfThisFileType" : {
-          "part" : 13933100,
-          "total" : 13933100
+          "part" : 28042100,
+          "total" : 28042100
         }
       } ]
     } ],
@@ -69,19 +69,19 @@
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 0,
       "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
-      "scanningTime" : 4015141300,
+      "scanningTime" : 7058363900,
       "timeProcessingUpToDateFiles" : 0,
-      "timeUpdatingContentLessIndexes" : 222051100,
+      "timeUpdatingContentLessIndexes" : 482384200,
       "timeIndexingWithoutContent" : 0
     }, {
-      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@2ede6ff1",
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@51b8c293",
       "numberOfScannedFiles" : 221,
       "numberOfSkippedFiles" : 4,
       "numberOfFilesForIndexing" : 0,
       "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
-      "scanningTime" : 545863800,
+      "scanningTime" : 966614500,
       "timeProcessingUpToDateFiles" : 0,
-      "timeUpdatingContentLessIndexes" : 6293900,
+      "timeUpdatingContentLessIndexes" : 37444900,
       "timeIndexingWithoutContent" : 0
     }, {
       "providerName" : "Module 'untitled'",
@@ -89,12 +89,12 @@
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 1,
       "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
-      "scanningTime" : 182965800,
+      "scanningTime" : 117772900,
       "timeProcessingUpToDateFiles" : 0,
-      "timeUpdatingContentLessIndexes" : 690100,
-      "timeIndexingWithoutContent" : 1241400
+      "timeUpdatingContentLessIndexes" : 7021600,
+      "timeIndexingWithoutContent" : 856500
     }, {
-      "providerName" : "com.intellij.ide.scratch.ScratchesAndConsolesIndexSetContributor@7dd6b9fb",
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@51b8c293",
       "numberOfScannedFiles" : 0,
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 0,
@@ -104,7 +104,7 @@
       "timeUpdatingContentLessIndexes" : 0,
       "timeIndexingWithoutContent" : 0
     }, {
-      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@75ece4f",
+      "providerName" : "com.intellij.ide.scratch.ScratchesAndConsolesIndexSetContributor@3059bbe",
       "numberOfScannedFiles" : 0,
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 0,
@@ -114,7 +114,7 @@
       "timeUpdatingContentLessIndexes" : 0,
       "timeIndexingWithoutContent" : 0
     }, {
-      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@75ece4f",
+      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@4a6d3d61",
       "numberOfScannedFiles" : 0,
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 0,
@@ -124,7 +124,7 @@
       "timeUpdatingContentLessIndexes" : 0,
       "timeIndexingWithoutContent" : 0
     }, {
-      "providerName" : "com.intellij.ide.scratch.ScratchesAndConsolesIndexSetContributor@7dd6b9fb",
+      "providerName" : "com.intellij.ide.scratch.ScratchesAndConsolesIndexSetContributor@3059bbe",
       "numberOfScannedFiles" : 0,
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 0,
@@ -134,7 +134,7 @@
       "timeUpdatingContentLessIndexes" : 0,
       "timeIndexingWithoutContent" : 0
     }, {
-      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@2ede6ff1",
+      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@4a6d3d61",
       "numberOfScannedFiles" : 0,
       "numberOfSkippedFiles" : 0,
       "numberOfFilesForIndexing" : 0,
@@ -148,8 +148,8 @@
       "providerName" : "Module 'untitled'",
       "totalNumberOfIndexedFiles" : 1,
       "totalNumberOfFilesFullyIndexedByExtensions" : 1,
-      "totalIndexingTime" : 17766100,
-      "contentLoadingTime" : 3335789,
+      "totalIndexingTime" : 43893000,
+      "contentLoadingTime" : 8223686,
       "numberOfTooLargeForIndexingFiles" : 0,
       "slowIndexedFiles" : [ ]
     } ]

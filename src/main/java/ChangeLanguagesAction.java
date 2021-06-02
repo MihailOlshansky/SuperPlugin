@@ -63,7 +63,6 @@ public class ChangeLanguagesAction extends AnAction {
                 }
         );
         if (result != null) {
-            System.out.println(result);
             Config.setLangFromTo(project, result.split("\\s+")[0], result.split("\\s+")[1]);
         }
     }

@@ -1,19 +1,22 @@
 <application>
   <component name="ActionsLocalSummary">
     <e n="$SelectAll">
-      <i c="4" l="1622586623188" />
+      <i c="9" l="1622637866588" />
     </e>
     <e n="$Undo">
-      <i c="24" l="1622586838406" />
+      <i c="36" l="1622638195249" />
     </e>
     <e n="EditorBackSpace">
-      <i c="133" l="1622586605769" />
+      <i c="189" l="1622638209037" />
     </e>
     <e n="EditorCopy">
       <i c="1" l="1622583455815" />
     </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="1" l="1622638199410" />
+    </e>
     <e n="EditorDown">
-      <i c="8" l="1622586839304" />
+      <i c="14" l="1622637574848" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="10" l="1622584100728" />
@@ -25,22 +28,22 @@
       <i c="1" l="1622547405311" />
     </e>
     <e n="EditorLeft">
-      <i c="43" l="1622584130950" />
+      <i c="48" l="1622637575329" />
     </e>
     <e n="EditorLeftWithSelection">
-      <i c="77" l="1622566310384" />
+      <i c="154" l="1622638198305" />
     </e>
     <e n="EditorLineEnd">
-      <i c="5" l="1622586601989" />
+      <i c="6" l="1622637577626" />
     </e>
     <e n="EditorLineStartWithSelection">
       <i c="1" l="1622561485686" />
     </e>
     <e n="EditorRight">
-      <i c="12" l="1622584099547" />
+      <i c="24" l="1622638198698" />
     </e>
     <e n="EditorRightWithSelection">
-      <i c="41" l="1622584101889" />
+      <i c="44" l="1622637563575" />
     </e>
     <e n="EditorSplitLine">
       <i c="1" l="1622545459335" />
@@ -49,7 +52,7 @@
       <i c="1" l="1622583310640" />
     </e>
     <e n="EditorUp">
-      <i c="15" l="1622584138659" />
+      <i c="16" l="1622637558975" />
     </e>
     <e n="FindNext">
       <i c="5" l="1622582646585" />
@@ -61,7 +64,7 @@
       <i c="1" l="1622544668804" />
     </e>
     <e n="SaveAll">
-      <i c="8" l="1622583319233" />
+      <i c="10" l="1622638211376" />
     </e>
     <e n="ToggleLineBreakpoint">
       <i c="1" l="1622583308529" />

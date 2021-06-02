@@ -23,8 +23,6 @@ public class Config {
     }
 
     public static void setLangFromTo(Project project, String newLangFrom, String newLangTo) {
-        PropertiesComponent.getInstance(project).unsetValue(langFromName);
-        PropertiesComponent.getInstance(project).unsetValue(langToName);
         PropertiesComponent.getInstance(project).setValue(langFromName, newLangFrom);
         PropertiesComponent.getInstance(project).setValue(langToName, newLangTo);
     }
